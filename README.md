@@ -7,5 +7,5 @@ This exercise is to practice docker skills, so you need to create a dockerfile f
  - AspNet version 6.0.102
  - Node version 14.17.6
  - Php version 7.2
-  - Hint: run `docker-php-ext-install mysqli` to install mysql on your dockerfile
+   - Hint: run `docker-php-ext-install mysqli` to install mysql on your dockerfile
  - Python version 3.10.1
