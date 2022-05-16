@@ -8,14 +8,20 @@ All backend applications should be exposed on port 9000. Maybe the connection st
 
 #### Angular
  - node version: 14.17.6
+ - dependencies: npm install
+ - running: ng serve
 
 #### .Net
  - version: 6.0.102
  - database: mongo
+ - dependencies: dotnet restore
+ - running: dotnet run
 
 #### Express
  - node version: 14.17.6
  - database: Microsoft SQL Server
+ - dependencies: npm install
+ - running: node index.js
 
 #### PHP
  - version: 7.2
@@ -25,3 +31,5 @@ All backend applications should be exposed on port 9000. Maybe the connection st
 #### Python
  - version: 3.10.1
  - database: Postgres
+ - dependencies: pip install -r requirements.txt
+ - running: python app.py
