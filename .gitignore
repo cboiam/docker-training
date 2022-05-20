@@ -1,7 +1,3 @@
-[Dd]ockerfile
-docker-compose.yml
-docker-compose.yaml
-
 __pycache__
 
 node_modules

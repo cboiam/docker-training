@@ -1,7 +1,10 @@
 const express = require('express')
 const sql = require("mssql")
+var cors = require('cors')
 const app = express()
 const port = 3000
+
+app.use(cors())
 
 app.get('/', async (req, res) => {
 
@@ -9,7 +12,7 @@ app.get('/', async (req, res) => {
         const connection = await sql.connect({
             user: 'sa',
             password: 'Password@123',
-            server: 'localhost',
+            server: 'sqlserver',
             database: 'master',
             port: 1433,
             options: {
