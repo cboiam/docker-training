@@ -1,0 +1,15 @@
+name: CD
+
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run a one-line script
+        run: |
+          docker login -u cristianb1233 -p ${{ secrets.docker_password }}
+          docker build -t cristianb1233/docker-training-api-aspnet ./api-aspnet/
+          docker push cristianb1233/docker-training-api-aspnet
