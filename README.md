@@ -7,7 +7,7 @@ This exercise is to practice docker skills, so you need to create a dockerfile f
 All backend applications should be exposed on port 9000. Maybe the connection strings for the databases would have to be adjusted according to containers.
 
 #### Angular
- - node version: 14.17.6
+ - node version: 20.15
  - dependencies: npm install
  - running: ng serve
 
